@@ -32,6 +32,7 @@ function mylang(lang) {
     }
     else {
         langs = "en"
+        myfetch("India","en")
         // myfetch(,langs)
     }
     // langs=lang
