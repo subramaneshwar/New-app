@@ -1,0 +1,484 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* width: 100vw; */
+}
+
+.button {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2px;
+    gap: 10px;
+    border-bottom: rgb(255, 255, 255, 0.5) solid 1px;
+
+}
+
+.one {
+    /* width: 100%; */
+    height: 30px;
+    width: 80px;
+    background-color: transparent;
+    color: white;
+    border: solid;
+    border-radius: 3px;
+}
+
+
+.two {
+    height: 30px;
+    width: 80px;
+    background-color: transparent;
+    color: white;
+    border: solid;
+    border-radius: 3px;
+}
+
+.sidebar ul li p {
+    color: white;
+    font-size: large;
+    padding-left: 5px;
+
+}
+
+.one:hover {
+
+    cursor: pointer;
+    /* color: cyan !important; */
+    /* opacity: .5; */
+    color: red;
+    /* background-color: #1e1e1e !important; */
+    border: solid white;
+}
+
+.two:hover {
+    cursor: pointer;
+    color: red;
+    /* background-color: #1e1e1e !important; */
+    border: solid white;
+
+}
+
+.div {
+    display: flex;
+    height: 10vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.ri {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    background: #1b1b1b;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: left 0.4s ease;
+    /* border: solid red; */
+}
+
+.btn.click {
+    left: 260px;
+}
+
+.btn span {
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+.btn.click span:before {
+    content: '\f00d';
+}
+
+.sidebar {
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -300px;
+    background: black;
+    transition: left 0.4s ease;
+}
+
+.sidebar.show {
+    left: 0px
+}
+
+.close {
+    left: -300px;
+}
+
+nav ul {
+    background: #1b1b1b;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+nav ul li {
+    line-height: 40px;
+
+}
+
+/* nav ul li:last-child {
+    border-bottom: rgb(255, 255, 255, 0.5) solid 1px;
+} */
+
+nav ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+
+}
+
+/* nav ul li.active a{
+    color: cyan;
+    background: #1e1e1e;
+    border-left-color: cyan;
+  } */
+nav ul li a:hover {
+    color: #ff005197 !important;
+    background-color: #1e1e1e !important;
+    /* opacity: 0.5; */
+}
+.bots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid red; */
+    padding-top: 10px;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid red; */
+    /* padding-top: 10px; */
+    flex-wrap: wrap;
+    overflow: scroll;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.side {
+    color: #ff004f;
+    border-left-color: #ff004f;
+}
+
+.box {
+    background-color: cyan;
+    color: #ff004f;
+    font-weight: bold;
+    border: white solid;
+}
+
+.card {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    width: 900px;
+    margin: 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.lefts {
+    width: 40%;
+    height: 90%;
+    margin: 10px;
+}
+
+.ris {
+    width: 60%;
+    height: 90%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 5px;
+}
+
+.lefts img {
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title p {
+    font-size: smaller;
+}
+
+.title span {
+    font-weight: bold;
+}
+
+.desp {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.desp p {
+    font-size: larger;
+}
+
+.reads a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+#err {
+    padding-left: 30%;
+    font-size: xx-large;
+    color: red;
+}
+
+.mob{
+    height: 50px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    font-size: medium;
+    color: white;
+    
+}
+.mob img{
+    margin: 2px;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 300px;
+        height: 150px;
+    }
+    .mob{
+        width: 300px;
+        height: 20px;
+        font-size: 5px;
+    }
+    .mob img{
+        height: 10px;
+    }
+
+    .lefts {
+        width: 30%;
+        height: 80%;
+        margin: 10px;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        font-size: 5px;
+    }
+
+    .title p {
+        font-size: 5px;
+    }
+
+    .title span {
+        font-weight: bold;
+    }
+
+    .desp {
+        /* border: solid; */
+        height: 50px;
+        /* border: red solid; */
+        display: flex;
+        /* flex-wrap: wrap; */
+        overflow-y: scroll;
+    }
+
+    .desp p {
+        font-size: 8px;
+    }
+
+    .reads a {
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+
+    .reads {
+        font-size: 8px;
+    }
+
+    .sidebar ul li a {
+        color: white;
+        font-size: small;
+        padding-left: 20px;
+
+    }
+
+    .sidebar ul li p {
+        font-size: small;
+        padding-left: 5px;
+    }
+
+    .sidebar {
+        width: 150px;
+    }
+
+    .btn.click {
+        left: 160px;
+    }
+
+    .button {
+        /* border: red solid; */
+        /* width: 150px; */
+        padding-right: 10px;
+    }
+
+    .ri img {
+        border: 1px solid;
+        width: 30%;
+        height: 50px;
+    }
+
+    .btn {
+        position: absolute;
+        top: 10px;
+        left: 45px;
+        height: 35px;
+        width: 35px;
+        /* border: solid red; */
+    }
+
+    .btn span {
+        color: white;
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) and (min-width:469px) {
+
+    .card {
+        width: 500px;
+        height: 250px;
+    }
+    .mob{
+        width: 500px;
+        height: 40px;
+        font-size: 8px;
+    }
+    .mob img{
+        /* width: 80px; */
+        height: 30px;
+    }
+
+    .lefts {
+        /* border: red solid; */
+        width: 40%;
+        height: 90%;
+        margin: 10px;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        font-size: x-small;
+    }
+
+    .title p {
+        font-size: 8px;
+    }
+
+    .title span {
+        font-weight: bold;
+    }
+
+    .desp {
+        height: 100px;
+        display: flex;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .desp p {
+        font-size: 14px;
+    }
+
+    .reads a {
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+
+    .reads {
+        font-size: x-small;
+    }
+
+    .sidebar ul li a {
+        color: white;
+        font-size: medium;
+        padding-left: 20px;
+
+    }
+
+    .sidebar ul li p {
+        font-size: medium;
+        padding-left: 5px;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .btn.click {
+        left: 210px;
+    }
+
+    .button {
+        width: 200px;
+    }
+
+    .ri img {
+
+        height: 80px;
+    }
+   
+
+}
